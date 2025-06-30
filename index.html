@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>АвтоИмперия</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">АвтоИмперия</div>
+    <nav>
+      <a href="#">СТО</a>
+      <a href="#">Магазины</a>
+      <a href="#">АКПП</a>
+      <a href="#">Аксессуары</a>
+      <a href="#">О нас</a>
+      <div class="lang-switch">
+        <button onclick="setLang('ru')">RU</button>
+        <button onclick="setLang('kz')">KZ</button>
+        <button onclick="setLang('en')">EN</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 data-i18n="main_title">Найди СТО, магазин или сервис рядом</h1>
+      <p data-i18n="sub">Все города Казахстана. Проверенные отзывы. Удобный поиск.</p>
+    </section>
+    <section class="search-block">
+      <select><option>Выбери город</option></select>
+      <input type="text" placeholder="Поиск по услугам..." />
+      <button>Найти</button>
+    </section>
+    <section class="services">
+      <h2 data-i18n="featured">Популярные категории</h2>
+      <ul>
+        <li>Ремонт ДВС</li>
+        <li>Электрика</li>
+        <li>АКПП</li>
+        <li>Масла</li>
+        <li>Шины</li>
+        <li>Аксессуары</li>
+      </ul>
+    </section>
+    <section class="promo">
+      <h2 data-i18n="promo">Приведи друзей и получи скидку!</h2>
+      <p data-i18n="promo_text">С каждого 10-го клиента – скидка до 5000₸</p>
+    </section>
+  </main>
+  <footer>
+    <div class="contact">
+      <p>© autoimperia.kz</p>
+      <p><a href="about.html">О нас</a></p>
+    </div>
+  </footer>
+</body>
+</html>
