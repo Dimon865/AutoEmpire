@@ -1,58 +1,95 @@
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  color: #fff;
-  background-color: #111;
-}
-.section {
-  padding: 40px 20px;
-  background-size: cover;
-  background-position: center;
-}
-.header {
-  background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1400&q=80');
-  text-align: center;
-  background-color: #000;
-}
-.header h1 {
   margin: 0;
-  font-size: 2.5em;
-  color: #0f0;
+  background-color: #f9f9f9;
 }
-nav a, .contacts a {
-  margin: 0 10px;
-  color: #0f0;
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0057ff;
+}
+nav a {
+  margin: 0 0.5rem;
   text-decoration: none;
+  color: #333;
 }
-.banner {
-  background-image: url('https://images.unsplash.com/photo-1607966427187-f36f0c7d1bd9?auto=format&fit=crop&w=1400&q=80');
+.hero {
+  background: url('bg-auto.jpg') center/cover no-repeat;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+.hero h1 {
+  font-size: 2rem;
+}
+.hero p {
+  margin: 1rem 0;
+}
+.search-box {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.search-box select, .search-box input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.search-box button {
+  padding: 0.5rem 1rem;
+  background: #0057ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.top-services, .reviews, .add-service {
+  padding: 2rem;
   text-align: center;
 }
-.sto {
-  background-image: url('https://images.unsplash.com/photo-1605559424843-335b07bb9a2e?auto=format&fit=crop&w=1400&q=80');
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-.shop {
-  background-image: url('https://images.unsplash.com/photo-1616389480949-d39b7e4ae3e0?auto=format&fit=crop&w=1400&q=80');
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.bonus {
-  background-image: url('https://images.unsplash.com/photo-1606902965551-dce093cda7e5?auto=format&fit=crop&w=1400&q=80');
+.card img {
+  width: 100%;
+  border-radius: 8px;
 }
-.tariffs {
-  background-image: url('https://images.unsplash.com/photo-1515922071245-7b7b6e2314d8?auto=format&fit=crop&w=1400&q=80');
+.card p {
+  margin: 0.5rem 0;
 }
-.footer {
-  background-color: #000;
+.review-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.review {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+}
+footer {
+  background: #eee;
+  padding: 1rem;
   text-align: center;
-}
-.contacts {
-  margin-top: 10px;
-}
-.contacts a {
-  padding: 8px 12px;
-  background: #0f0;
-  color: #000;
-  margin: 5px;
-  border-radius: 5px;
-  display: inline-block;
 }
